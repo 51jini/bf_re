@@ -1,0 +1,50 @@
+/* desktop */
+@media screen and (min-width:1024px){
+    /* 12column */
+    .pcol01{float: left; width: 8.33%;}
+    .pcol02{float: left; width: 16.66%;}
+    .pcol03{float: left; width: 25%;}
+    .pcol04{float: left; width: 33.33%;}
+    .pcol05{float: left; width: 41.66%;}
+    .pcol06{float: left; width: 50%;}
+    .pcol07{float: left; width: 58.33%;}
+    .pcol08{float: left; width: 66.66%;}
+    .pcol09{float: left; width: 75%;}
+    .pcol10{float: left; width: 83.33%;}
+    .pcol11{float: left; width: 91.66%;}
+    .pcol12{float: left; width: 100%;}
+}
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:958px){
+    /* 12column */
+    .tcol01{float: left; width: 8.33%;}
+    .tcol02{float: left; width: 16.66%;}
+    .tcol03{float: left; width: 25%;}
+    .tcol04{float: left; width: 33.33%;}
+    .tcol05{float: left; width: 41.66%;}
+    .tcol06{float: left; width: 50%;}
+    .tcol07{float: left; width: 58.33%;}
+    .tcol08{float: left; width: 66.66%;}
+    .tcol09{float: left; width: 75%;}
+    .tcol10{float: left; width: 83.33%;}
+    .tcol11{float: left; width: 91.66%;}
+    .tcol12{float: left; width: 100%;}
+}
+
+/* mobile */
+@media screen and (max-width:767px){
+    /* 12column */
+    .mcol01{float: left; width: 8.33%;}
+    .mcol02{float: left; width: 16.66%;}
+    .mcol03{float: left; width: 25%;}
+    .mcol04{float: left; width: 33.33%;}
+    .mcol05{float: left; width: 41.66%;}
+    .mcol06{float: left; width: 50%;}
+    .mcol07{float: left; width: 58.33%;}
+    .mcol08{float: left; width: 66.66%;}
+    .mcol09{float: left; width: 75%;}
+    .mcol10{float: left; width: 83.33%;}
+    .mcol11{float: left; width: 91.66%;}
+    .mcol12{float: left; width: 100%;}
+}

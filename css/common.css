@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("layout.css");
+
+/* #a8996e_point */
+
+/* base */
+*{padding: 0; margin: 0; font-family: 'Noto Sans KR', sans-serif; font-size: 18px; color: #fff;}
+html,body{background-color: #000;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+img{display: block; border: none;}
+address{font-style: normal;}
+table{border-spacing: 0; border-collapse: collapse;}
+fieldset{border: none;}
+legend.away, label.away{position: absolute; left: -999em;}
+button{border: 0; cursor: pointer;}
+.roboto{font-family: Roboto, sans-serif;}
+.fl{float: left;}
+.fr{float: right;}
+.cb{clear: both;}
+.cf:after{content:''; clear:both; display:block;}
+
+/* 공통 */
+/* popup */
+.popupWrap{position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,.7); z-index: 20000;}
+.popup{position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; width: 500px; height: 400px; border: 8px solid #ccc; box-sizing: border-box; background-color: #111;}
+.popup:before{content: ''; display: block; position: absolute; left: 10px; top: 10px; width: 460px; height: 360px; border: 2px solid #ccc; box-sizing: border-box; }
+.popup .pNotice{overflow: hidden; padding: 40px; padding-bottom: 20px; box-sizing: border-box;}
+.popup .title{display: block; margin-bottom: 20px; color: #ccc; font-size: 36px; font-weight: 700;}
+.popup p{color: #999; line-height: 28px;}
+.popup .red{color: #ccc; font-weight: 500;}
+.popup .pClose{position: absolute; bottom: 1.25rem; right: 1.25rem;}
+.pClose a{font-size: 16px;}
+.pClose .tClose:hover{text-decoration: underline;}
+
+/* header */
+header .pcLogo{float: left; width: 200px; height: 39px; margin-right: 100px; }
+header .pcLogo img{width: 100%; height: 100%;}
+
+/* footer */
+footer{width: 100%; overflow: hidden; background-color: #000;}
+footer p, footer span{color: #999; font-size: 0.875rem; line-height: 1.5rem;}
+footer .p2{margin-bottom: 0.625rem;}
+
+/* pc */
+@media screen and (min-width:1024px){
+    .wrap{ width: 1700px; max-width: 100%;}
+    
+    /* header */
+    header{width: 100%; max-width: 100%; height: 90px; position: fixed; top: 0; z-index: 9100; background-color: rgba(0,0,0,.1);}
+    header .pcLogo{ margin-top: 25px; margin-left: 20px; }
+    
+    /* gnb */
+    .gnb{ float: left; width: calc(100% - 350px); }
+    .gnb > ul{ width: 100%; }
+    .gnb > ul > li{float: left; width: 260px; max-width: 20%; height: 90px; text-align: center; line-height: 90px; position: relative;}
+    .mainNav{display: block; width: 100%; height: 100%; font-weight: 700;}
+    .mainNav:after{content: ''; display: block; position: absolute; left: 0; right: 0; bottom: 0; margin: auto; width: 0; height: 3px; background-color: #fff;}
+    .gnb > ul > li:hover .mainNav:after{width: 100%; transition: 0.4s;}
+    .subNav{position: absolute; top: 90px; left: 0; z-index: 9200;}
+    .subNav li a{display: block; width: 260px; height: 50px; background-color: rgba(0,0,0,.2); line-height: 50px; font-size: 16px;}
+    .subNav li a:hover{text-decoration: underline;}
+    .subNav li.on a{text-decoration: underline;}
+    
+    /* panelGnb */
+    .panelGnb{width: 100%; height: 100%; z-index: 10000; background-color: rgba(0,0,0,.8); position: absolute; top: -100%; left: 0; transition: 0.3s; opacity: 0;}
+    .panelGnb.on{ top: 0; opacity: 1;}
+    .panelGnb .pcLogo{float: left; width: 200px; height: 39px; margin: 25px 80px;}
+    .panelGnb .pcLogo img{width: 100%; height: 100%;}
+    
+    .panelGnb > ul{width: 1240px; height: 100%; margin: 0 auto;  padding: 300px 85px 0; box-sizing: border-box;  }
+    .panelGnb > ul > li{float: left; display: inline-block;  margin-right: 170px;}
+    .panelGnb > ul > .last{margin-right: 0px; }
+    .panelGnb .mainnav{display: block;  width: 100%; height: 80px; font-size: 36px; color: #fff; font-weight: 700; }
+    .panelGnb .subnav li{ height: 50px; line-height: 50px; }
+    .panelGnb .subnav li:hover a{text-decoration: underline;}
+    .panelGnb .subnav li a{font-size: 18px; color: #fff;}
+    
+    /* panelIcon */    
+    .panelIcon{width: 35px; height: 32px; position: absolute; z-index: 10001; top: 30px; right: 110px;}
+    .panelIcon{width: 35px; height: 32px; position: absolute; z-index: 10001; top: 30px; right: 110px;}
+    .panelIcon a{display: block; width: 100%; height: 100%; position: relative; transition: 0.3s;}
+    .panelIcon span{display: block; width: 35px; height: 3px; background-color: #fff; transition: 0.3s; position: absolute; left: 0;}
+    .panelIcon .line01{ top: 5px; }
+    .panelIcon .line02{ top: 15px; }
+    .panelIcon .line03{ top: 25px; }
+    .panelIcon a.on{transform: rotate(-45deg); transition-delay: 0.6s;}
+    .panelIcon .line02.on{transform: scaleX(0);}
+    .panelIcon .line01.on{top: 15px; transition-delay: 0.3s;}
+    .panelIcon .line03.on{top: 15px; transform: rotate(90deg); transition-delay: 0.3s;}
+    
+    .mgnb{display: none;}
+    .mPanelIcon{display: none;}
+    
+    /* footer */
+    footer{position: absolute; bottom: -180px; z-index: 1000; max-width: 100%; height: 180px; padding-top: 40px; box-sizing: border-box; transition: 0.6s ease-out; transition-delay: 1s; opacity: 0;}
+    footer.on{bottom: 0; opacity: 1;}
+    footer h1{float: left; width: 200px; height: 39px; margin-top: 30px;}
+    footer h1 img{width: 100%; height: 100%;}
+    footer .fCopy{float: left; margin-left: 200px;}
+}
+
+
+
+/* pc */
+@media screen and (min-width:1400px){
+    header .pcLogo{ margin-top: 25px; margin-left: 0px; }
+}
+
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1023px){
+    /* header */
+    header{width: 100%; height: 80px; position: fixed; top: 0; left: 0; z-index: 8000; padding: 20px; box-sizing: border-box;}
+    header .pcLogo{float: left; width: 200px; height: 39px;}
+    header .pcLogo img{width: 100%; height: 100%;}
+    
+    /* panelIcon */    
+    .mPanelIcon{width: 35px; height: 32px; position: absolute; z-index: 10001; top: 20px; right: 30px;}
+    .mPanelIcon a{display: block; width: 100%; height: 100%; position: relative; transition: 0.3s;}
+    .mPanelIcon span{display: block; width: 35px; height: 3px; background-color: #fff; transition: 0.3s; position: absolute; left: 0;}
+    .mPanelIcon .line01{ top: 5px; }
+    .mPanelIcon .line02{ top: 15px; }
+    .mPanelIcon .line03{ top: 25px; }
+    .mPanelIcon a.on{transform: rotate(-45deg); transition-delay: 0.6s;}
+    .mPanelIcon .line02.on{transform: scaleX(0);}
+    .mPanelIcon .line01.on{top: 15px; transition-delay: 0.3s;}
+    .mPanelIcon .line03.on{top: 15px; transform: rotate(90deg); transition-delay: 0.3s;}
+    
+    /* mgnb */
+    .mgnb{ width: 100%; height: 100%; z-index: 10000; background-color: rgba(0,0,0,0.8); position: fixed; top: -100%; left: 0; opacity: 0; transition: 0.3s; }
+    .mgnb.on{ top: 0; opacity: 1;}
+    .mgnb .pcLogo{float: left; width: 200px; height: 39px; position: relative; left: 20px; top: 20px;}
+    .mgnb .pcLogo img{ width: 100%; height: 100%;}
+    .mgnb > ul{width: 100%; height: 100%; position: absolute; top: 90px;}
+    .mgnb > ul > li{ width: 100%; overflow: hidden;}
+    .mgnb .mainNav{ display: block; width: 100%; height: 60px; box-sizing: border-box; line-height: 60px; font-size: 20px; color: #fff; font-weight: 700; padding-left: 40px;}
+
+    /* topNav on */
+    .mgnb li.on .mainNav{color: #eee;}
+
+    .subNav li{ width: 100%; height: 50px; box-sizing: border-box; line-height: 50px; background-color: #000; padding-left: 40px;}
+    .subNav a{ display: block; width: 100%; height: 100%; font-size: 16px; font-weight: bold; color: #fff; font-weight: 500;}
+    
+    .gnb{display: none;}
+    .panelGnb{display: none;}
+    
+    /* footer */
+    footer{position: absolute; bottom: -100%; z-index: 1000; padding: 40px 0; box-sizing: border-box; opacity: 0; transition: 0.6s ease-out; transition-delay: 0.8s;}
+    footer.on{bottom: 0; opacity: 1;}
+    footer h1{width: 200px; height: 39px; margin: 0 auto 10px;}
+    footer h1 img{width: 100%; height: 100%;}
+    footer .fCopy{width: 420px; margin: 0 auto; text-align: center;} 
+}
+
+/* mobile */
+@media screen and (max-width:767px){
+    *{font-size: 16px;}
+    
+    /* popup */
+    .popup{width: 90%; height: 360px;}
+    .popup:before{left: 2%; top: 2%; width: 96%; height: 96%;}
+    .popup .pNotice{padding: 1.25rem; padding-bottom: 0;}
+    .popup .title{margin-bottom: 0.625rem; font-size: 1.75rem;}
+    .popup .pClsoe{position: absolute; bottom: 20px; right: 20px;}
+    .popup .pClose a{font-size: 0.875rem;}
+    
+    /* header */
+    header{width: 100%; height: 60px; position: fixed; top: 0; left: 0; z-index: 8000; padding: 10px; box-sizing: border-box;}
+    header .pcLogo{float: left; width: 200px; height: 39px;}
+    header .pcLogo img{width: 100%; height: 100%;}
+    
+    /* panelIcon */    
+    .mPanelIcon{width: 35px; height: 32px; position: absolute; z-index: 10001; top: 10px; right: 10px;}
+    .mPanelIcon a{display: block; width: 100%; height: 100%; position: relative; transition: 0.3s;}
+    .mPanelIcon span{display: block; width: 35px; height: 3px; background-color: #fff; transition: 0.3s; position: absolute; left: 0;}
+    .mPanelIcon .line01{ top: 5px; }
+    .mPanelIcon .line02{ top: 15px; }
+    .mPanelIcon .line03{ top: 25px; }
+    .mPanelIcon a.on{transform: rotate(-45deg); transition-delay: 0.6s;}
+    .mPanelIcon .line02.on{transform: scaleX(0);}
+    .mPanelIcon .line01.on{top: 15px; transition-delay: 0.3s;}
+    .mPanelIcon .line03.on{top: 15px; transform: rotate(90deg); transition-delay: 0.3s;}
+    
+    /* mgnb */
+    .mgnb{ width: 100%; height: 100%; z-index: 10000; background-color: rgba(0,0,0,0.8); position: fixed; top: -100%; left: 0; opacity: 0; transition: 0.3s; }
+    .mgnb.on{ top: 0; opacity: 1;}
+    .mgnb .pcLogo{float: left; width: 200px; height: 39px; position: relative; left: 10px; top: 10px;}
+    .mgnb .pcLogo img{ width: 100%; height: 100%;}
+    .mgnb > ul{width: 100%; height: 100%; position: absolute; top: 65px;}
+    .mgnb > ul > li{width: 100%; overflow: hidden;}
+    .mgnb .mainNav{ display: block; width: 100%; height: 60px; box-sizing: border-box; line-height: 60px; font-size: 20px; color: #fff; font-weight: 700; padding-left: 20px;}
+
+    /* topNav on */
+    .mgnb li.on .mainNav{color: #eee;}
+
+    .subNav li{ width: 100%; height: 50px; box-sizing: border-box; line-height: 50px; background-color: #000; padding-left: 30px;}
+    .subNav a{ display: block; width: 100%; height: 100%; font-size: 16px; font-weight: bold; color: #fff; font-weight: 500;}
+    
+    .gnb{display: none;}
+    .panelGnb{display: none;}
+    
+    /* footer */
+    footer{position: absolute; bottom: -100%; z-index: 1000; padding: 15px; box-sizing: border-box; opacity: 0; transition: 0.6s ease-out; transition-delay: 0.8s;}
+    footer.on{bottom: 0; opacity: 1;}
+    footer h1{width: 200px; height: 39px; margin: 0 auto 10px;}
+    footer h1 img{width: 100%; height: 100%;}
+    footer p{text-align: center;}
+}
+
+/* iphone5&se */
+@media screen and (max-width:320px){
+    *{font-size: 14px;}
+    
+    /* popup */
+    .popup{height: 310px;}
+    .popup p{line-height: 25px; font-size: 13px;}
+    
+    /* footer */
+    footer{padding: 10px; box-sizing: border-box;}
+    footer .p1, footer .p2{width: 240px; margin: 0 auto;}
+    footer .fSmall{margin-top: 5px; font-size: 0.8rem;}
+}
+
+
+
+
+
+
+

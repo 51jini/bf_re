@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>BODYFRIEND</title>
+        <link rel="shortcut icon" href="img/common/favicon.png">
+        <link rel="apple-touch-icon-precomposed" href="img/common/favicon_ios.png" sizes="180x180">
+        <link rel="icon" href="img/common/favicon_android.png" sizes="192x192">
+        <link rel="stylesheet" href="css/fullpage.min.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/fullpage.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/easings.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="popupWrap">
+            <div class="popup">
+                <div class="pNotice">
+                    <span class="title">NOTICE</span>
+                    <p>
+                        본 사이트는 상업적 목적이 아닌<br>
+                        <span class="red">개인 포트폴리오</span> 용도로 만들어졌습니다.<br>
+                        홈페이지의 일부 내용과 이미지 등은<br>
+                        그 <span class="red">출처가 따로 있음</span>을 밝힙니다.<br>
+                        본 사이트는 <span class="red">HTML5와 CSS3</span>를 기준으로<br>
+                        크롬, 사파리, 오페라, 파이어폭스, IE10<br>이상의
+                        브라우저에 맞춘 홈페이지입니다.
+                    </p>
+                </div>
+                <div class="pClose">
+                    <a href="#closePopup" class="tClose">오늘 하루 보이지 않기</a>
+                    <a href="#closePopup" class="eClose">[CLOSE]</a>
+                </div>
+            </div>
+        </div>
+        <nav class="panelGnb">
+            <h1 class="pcLogo"><a href="index.html"><img src="img/common/header_logo.png" alt="바디프렌드로고"></a></h1>
+            <ul>
+                <li>
+                    <a href="#" class="mainnav">기업소개</a>
+                    <ul class="subnav">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">브랜드 스토리</a></li>
+                        <li><a href="#">전국 전시장 안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="mainnav">쇼핑</a>
+                    <ul class="subnav">
+                        <li><a href="#">바디프렌드</a></li>
+                        <li><a href="#">라클라우드</a></li>
+                        <li><a href="#">W정수기</a></li>
+                        <li><a href="#">BACK TO THE FUTURE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="mainnav">혜택</a>
+                    <ul class="subnav">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">제휴할인카드</a></li>
+                        <li><a href="#">포인트몰</a></li>
+                    </ul>
+                </li>
+                <li class="last">
+                    <a href="#" class="mainnav">고객지원</a>
+                    <ul class="subnav">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                        <li><a href="#">서비스 접수</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="panelIcon">
+            <a href="#panelOpen" title="패널열기">
+                <span class="line01"></span>
+                <span class="line02"></span>
+                <span class="line03"></span>
+            </a>
+        </div>
+        <header>
+            <div class="wrap">
+                <h1 class="pcLogo"><a href="index.html"><img src="img/common/header_logo.png" alt="바디프렌드로고"></a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="#" class="mainNav">기업소개</a>
+                            <ul class="subNav">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">브랜드 스토리</a></li>
+                                <li><a href="#">전국 전시장 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainNav">쇼핑</a>
+                            <ul class="subNav">
+                                <li><a href="#">바디프렌드</a></li>
+                                <li><a href="#">라클라우드</a></li>
+                                <li><a href="#">W정수기</a></li>
+                                <li><a href="#">BACK TO THE FUTURE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainNav">혜택</a>
+                            <ul class="subNav">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">제휴할인카드</a></li>
+                                <li><a href="#">포인트몰</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainNav">고객지원</a>
+                            <ul class="subNav">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">1:1문의</a></li>
+                                <li><a href="#">서비스 접수</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mPanelIcon">
+                    <a href="#panelOpen" title="패널열기">
+                        <span class="line01"></span>
+                        <span class="line02"></span>
+                        <span class="line03"></span>
+                    </a>
+                </div>
+                <nav class="mgnb">
+                    <h1 class="pcLogo"><a href="index.html"><img src="img/common/header_logo.png" alt="바디프렌드로고"></a></h1>
+                    <ul>
+                        <li>
+                            <a href="#" class="mainNav">기업소개</a>
+                            <ul class="subNav">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">브랜드 스토리</a></li>
+                                <li><a href="#">전국 전시장 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainNav">쇼핑</a>
+                            <ul class="subNav">
+                                <li><a href="#">바디프렌드</a></li>
+                                <li><a href="#">라클라우드</a></li>
+                                <li><a href="#">W정수기</a></li>
+                                <li><a href="#">BACK TO THE FUTURE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainNav">혜택</a>
+                            <ul class="subNav">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">제휴할인카드</a></li>
+                                <li><a href="#">포인트몰</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainNav">고객지원</a>
+                            <ul class="subNav">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">1:1문의</a></li>
+                                <li><a href="#">서비스 접수</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <ul id="pagebtn">
+            <li data-menuanchor="page01" class="page01">
+                <a href="#page01"> </a>
+            </li>
+            <li data-menuanchor="page02" class="page02">
+                <a href="#page02"></a>
+            </li>
+            <li data-menuanchor="page03" class="page03">
+                <a href="#page03"></a>
+            </li>
+            <li data-menuanchor="page04" class="page04">
+                <a href="#page04"></a>
+            </li>
+        </ul>
+        <div id="fullpage">
+            <div class="section fp-auto-height-responsive main">
+                <video id="mainVideo" src="img/main/main_video.mp4" playsinline loop muted data-autoplay></video>
+                <div class="mouse"><div class="scroll"></div></div>
+            </div>
+            <div class="section fp-auto-height-responsive bfmc">
+                <div class="subscript pcol03">
+                    <p class="small">헬스케어 No.1</p>
+                    <p class="bold">BODYFRIEND 안마의자</p>
+                    <p class="delay01 mb del">
+                        무더운 여름엔 시원한 통풍 시트로 시원하게,<br>
+                        추운 겨울엔 따뜻한 온풍시트로 따뜻하게
+                    </p>
+                    <p class="delay02 del">
+                        사용자의 체형과 개인별 압력에 최적화된<br>
+                        맞춤 안마를 제공하는 입체 안마 모듈
+                    </p>
+                    <a href="#more" class="moreBtn">VIEW MORE</a>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide01">
+                            <a href="#massageChair">
+                                <figure>
+                                    <img src="img/main/pc_bfmc_01.png" class="pc" alt="pc 안마의자 이미지 01">
+                                    <img src="img/main/t_bfmc_01.png" class="tablet" alt="tablet 안마의자 이미지 01">
+                                    <img src="img/main/m_bfmc_01.png"  class="mobile" alt="mobile 안마의자 이미지 01">
+                                    <figcaption>
+                                        <span class="name">팬텀2 브레인 마블 스페셜 (아이언맨)</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide02">
+                            <a href="#massageChair">
+                                <figure>
+                                    <img src="img/main/pc_bfmc_02.png" class="pc" alt="pc 안마의자 이미지 02">
+                                    <img src="img/main/t_bfmc_02.png" class="tablet" alt="tablet 안마의자 이미지 02">
+                                    <img src="img/main/m_bfmc_02.png"  class="mobile" alt="mobile 안마의자 이미지 02">
+                                    <figcaption>
+                                        <span class="name">팬텀2 브레인 마블 스페셜 (캡틴아메리카)</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide03">
+                            <a href="#massageChair">
+                                <figure>
+                                    <img src="img/main/pc_bfmc_03.png" class="pc" alt="pc 안마의자 이미지 03">
+                                    <img src="img/main/t_bfmc_03.png" class="tablet" alt="tablet 안마의자 이미지 03">
+                                    <img src="img/main/m_bfmc_03.png"  class="mobile" alt="mobile 안마의자 이미지 03">
+                                    <figcaption>
+                                        <span class="name">파라오2 블랙에디션</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide04">
+                            <a href="#massageChair">
+                                <figure>
+                                    <img src="img/main/pc_bfmc_04.png" class="pc" alt="pc 안마의자 이미지 04">
+                                    <img src="img/main/t_bfmc_04.png" class="tablet" alt="tablet 안마의자 이미지 04">
+                                    <img src="img/main/m_bfmc_04.png"  class="mobile" alt="mobile 안마의자 이미지 04">
+                                    <figcaption>
+                                        <span class="name white">LBF-750 람보르기니 안마의자</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide05">
+                            <a href="#massageChair">
+                                <figure>
+                                    <img src="img/main/pc_bfmc_05.png" class="pc" alt="pc 안마의자 이미지 05">
+                                    <img src="img/main/t_bfmc_05.png" class="tablet" alt="tablet 안마의자 이미지 05">
+                                    <img src="img/main/m_bfmc_05.png"  class="mobile" alt="mobile 안마의자 이미지 05">
+                                    <figcaption>
+                                        <span class="name">파라오S2 COOL 브레인</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide06">
+                            <a href="#massageChair">
+                                <figure>
+                                    <img src="img/main/pc_bfmc_06.png" class="pc" alt="pc 안마의자 이미지 06">
+                                    <img src="img/main/t_bfmc_06.png" class="tablet" alt="tablet 안마의자 이미지 06">
+                                    <img src="img/main/m_bfmc_06.png"  class="mobile" alt="mobile 안마의자 이미지 06">
+                                    <figcaption>
+                                        <span class="name">팰리스2 브레인</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide07">
+                            <a href="#massageChair">
+                                <figure>
+                                    <img src="img/main/pc_bfmc_07.png" class="pc" alt="pc 안마의자 이미지 07">
+                                    <img src="img/main/t_bfmc_07.png" class="tablet" alt="tablet 안마의자 이미지 07">
+                                    <img src="img/main/m_bfmc_07.png"  class="mobile" alt="mobile 안마의자 이미지 07">
+                                    <figcaption>
+                                        <span class="name">아제라에어</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="mouse"><div class="scroll"></div></div>
+            </div>
+            <div class="section fp-auto-height-responsive shopping">
+                <div class="wrap">
+                    <h2>SHOPPING</h2>
+                    <ul>
+                        <li class="fl left">
+                            <a href="#bodyfriend">
+                                <figure>
+                                    <img src="img/main/pc_shopping_01.png" class="pc" alt="shopping 이미지 01">
+                                    <img src="img/main/t_shopping_01.png" class="tablet" alt="shopping 이미지 01">
+                                    <img src="img/main/m_shopping_01.png" class="mobile" alt="shopping 이미지 01">
+                                    <figcaption>
+                                        <span class="shop roboto">BODYFRIEND</span><br>
+                                        <span class="viewBtn">VIEW</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="fl delay01 right">
+                            <a href="#LaCloud">
+                                <figure>
+                                    <img src="img/main/pc_shopping_02.png" class="pc" alt="shopping 이미지 02">
+                                    <img src="img/main/t_shopping_02.png" class="tablet" alt="shopping 이미지 02">
+                                    <img src="img/main/m_shopping_02.png" class="mobile" alt="shopping 이미지 02">
+                                    <figcaption>
+                                        <span class="shop roboto">La Cloud</span><br>
+                                        <span class="viewBtn">VIEW</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="fl delay02 left">
+                            <a href="#w">
+                                <figure>
+                                    <img src="img/main/pc_shopping_03.png" class="pc" alt="shopping 이미지 03">
+                                    <img src="img/main/t_shopping_03.png" class="tablet" alt="shopping 이미지 03">
+                                    <img src="img/main/m_shopping_03.png" class="mobile" alt="shopping 이미지 03">
+                                    <figcaption>
+                                        <span class="shop">W정수기</span><br>
+                                        <span class="viewBtn">VIEW</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="fl last delay03 right">
+                            <a href="#BttF">
+                                <figure>
+                                    <img src="img/main/pc_shopping_04.png" class="pc" alt="shopping 이미지 04">
+                                    <img src="img/main/t_shopping_04.png" class="tablet" alt="shopping 이미지 04">
+                                    <img src="img/main/m_shopping_04.png" class="mobile" alt="shopping 이미지 04">
+                                    <figcaption>
+                                        <span class="shop roboto">BACK TO THE FUTURE</span><br>
+                                        <span class="viewBtn">VIEW</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mouse"><div class="scroll"></div></div>
+                </div>
+            </div>
+            <div class="section fp-auto-height-responsive event">
+                <div class="eventWrap">
+                    <h2>EVENT</h2>
+                    <ul>
+                        <li class="event01">
+                            <a href="#event">
+                                <figure>
+                                    <img src="img/main/pc_event_bn_01.png" class="pc" alt="이벤트 이미지 01">
+                                    <img src="img/main/t_event_bn_01.png" class="tablet" alt="이벤트 이미지 01">
+                                    <img src="img/main/m_event_bn_01.png" class="mobile" alt="이벤트 이미지 01">
+                                    <figcaption>
+                                        <span class="eTit">10월 무이자 카드 이벤트</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="event02 fl">
+                            <a href="#event">
+                                <figure>
+                                    <img src="img/main/pc_event_bn_02.png" class="pc" alt="이벤트 이미지 02">
+                                    <img src="img/main/t_event_bn_02.png" class="tablet" alt="이벤트 이미지 02">
+                                    <img src="img/main/m_event_bn_02.png" class="mobile" alt="이벤트 이미지 02">
+                                    <figcaption>
+                                        <span class="eTit">W정수기 선납금 할인 이벤트</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="event03 last fl">
+                            <a href="#event">
+                                <figure>
+                                    <img src="img/main/pc_event_bn_03.png" class="pc" alt="이벤트 이미지 03">
+                                    <img src="img/main/t_event_bn_03.png" class="tablet" alt="이벤트 이미지 03">
+                                    <img src="img/main/m_event_bn_03.png" class="mobile" alt="이벤트 이미지 03">
+                                    <figcaption>
+                                        <span class="eTit">라클라우드 선납금 할인 이벤트</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="viewMore">
+                        <a href="#event" class="eMore">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">VIEW MORE</span>
+                        </a>
+                    </div>
+                </div>
+                <footer>
+                    <div class="wrap">
+                        <h1><img src="img/common/footer_logo.png" alt="바디프렌드 로고"></h1>
+                        <div class="fCopy">
+                            <p class="p1">(주)바디프랜드 서울특별시 강남구 양재천로 163 바디프랜드 도곡타워 대표이사 : 박상현  사업자등록번호 : 106-86-49737</p>
+                            <p class="p2">통신판매업신고 : 제 강남 15396   개인정보책임자 : 홍성진   대표번호 : 02-3448-8980  이메일주소 : customer@bodyfriend.co.kr</p>
+                            <p class="cf fSmall">Copyright 2020. BODYFRIEND, Inc. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
